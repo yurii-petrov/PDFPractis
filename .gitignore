@@ -1,0 +1,42 @@
+# macOS
+.DS_Store
+
+# Xcode
+*.xcuserstate
+*.xcworkspace
+xcuserdata/
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/xcshareddata/xcschemes/xcschememanagement.plist
+*.xcdebugger/
+DerivedData/
+build/
+
+# Swift Package Manager
+/.build/
+/Package.resolved
+.swiftpm/xcode/package.xcworkspace/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/report.json
+
+# Other
+*.plist
+*.moved-aside
+*.swp
+*.lock
+
+# Temporary
+*.tmp
+
