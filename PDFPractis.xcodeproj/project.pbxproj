@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046D31EA2CC3727B00467A88 /* ContextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D31E92CC3727B00467A88 /* ContextViewModel.swift */; };
+		046D32182CC4E1C900467A88 /* PDFKitModule in Frameworks */ = {isa = PBXBuildFile; productRef = 046D32172CC4E1C900467A88 /* PDFKitModule */; };
 		047E8FBD2CC1450A00C4ECEB /* PDFPractisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E8FBC2CC1450A00C4ECEB /* PDFPractisApp.swift */; };
 		047E8FBF2CC1450A00C4ECEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E8FBE2CC1450A00C4ECEB /* ContentView.swift */; };
 		047E8FC12CC1450B00C4ECEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047E8FC02CC1450B00C4ECEB /* Assets.xcassets */; };
 		047E8FC52CC1450B00C4ECEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047E8FC42CC1450B00C4ECEB /* Preview Assets.xcassets */; };
+		047E8FCD2CC1485F00C4ECEB /* sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 047E8FCC2CC1485F00C4ECEB /* sample.pdf */; };
+		047E8FCF2CC26D2E00C4ECEB /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E8FCE2CC26D2E00C4ECEB /* PDFKitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		046D31E92CC3727B00467A88 /* ContextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextViewModel.swift; sourceTree = "<group>"; };
+		046D32162CC4E12100467A88 /* PDFKitModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PDFKitModule; sourceTree = "<group>"; };
 		047E8FB92CC1450A00C4ECEB /* PDFPractis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFPractis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047E8FBC2CC1450A00C4ECEB /* PDFPractisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPractisApp.swift; sourceTree = "<group>"; };
 		047E8FBE2CC1450A00C4ECEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		047E8FC02CC1450B00C4ECEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		047E8FC22CC1450B00C4ECEB /* PDFPractis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PDFPractis.entitlements; sourceTree = "<group>"; };
 		047E8FC42CC1450B00C4ECEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		047E8FCC2CC1485F00C4ECEB /* sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sample.pdf; sourceTree = "<group>"; };
+		047E8FCE2CC26D2E00C4ECEB /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +35,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046D32182CC4E1C900467A88 /* PDFKitModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046D31EB2CC372F200467A88 /* old */ = {
+			isa = PBXGroup;
+			children = (
+				047E8FCE2CC26D2E00C4ECEB /* PDFKitView.swift */,
+			);
+			path = old;
+			sourceTree = "<group>";
+		};
+		046D320F2CC4DB4A00467A88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		047E8FB02CC1450A00C4ECEB = {
 			isa = PBXGroup;
 			children = (
+				046D32162CC4E12100467A88 /* PDFKitModule */,
 				047E8FBB2CC1450A00C4ECEB /* PDFPractis */,
 				047E8FBA2CC1450A00C4ECEB /* Products */,
+				046D320F2CC4DB4A00467A88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,9 @@
 			children = (
 				047E8FBC2CC1450A00C4ECEB /* PDFPractisApp.swift */,
 				047E8FBE2CC1450A00C4ECEB /* ContentView.swift */,
+				046D31E92CC3727B00467A88 /* ContextViewModel.swift */,
+				046D31EB2CC372F200467A88 /* old */,
+				047E8FCB2CC1483C00C4ECEB /* Resources */,
 				047E8FC02CC1450B00C4ECEB /* Assets.xcassets */,
 				047E8FC22CC1450B00C4ECEB /* PDFPractis.entitlements */,
 				047E8FC32CC1450B00C4ECEB /* Preview Content */,
@@ -67,6 +96,14 @@
 				047E8FC42CC1450B00C4ECEB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		047E8FCB2CC1483C00C4ECEB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				047E8FCC2CC1485F00C4ECEB /* sample.pdf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +122,9 @@
 			dependencies = (
 			);
 			name = PDFPractis;
+			packageProductDependencies = (
+				046D32172CC4E1C900467A88 /* PDFKitModule */,
+			);
 			productName = PDFPractis;
 			productReference = 047E8FB92CC1450A00C4ECEB /* PDFPractis.app */;
 			productType = "com.apple.product-type.application";
@@ -129,6 +169,7 @@
 			files = (
 				047E8FC52CC1450B00C4ECEB /* Preview Assets.xcassets in Resources */,
 				047E8FC12CC1450B00C4ECEB /* Assets.xcassets in Resources */,
+				047E8FCD2CC1485F00C4ECEB /* sample.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047E8FCF2CC26D2E00C4ECEB /* PDFKitView.swift in Sources */,
 				047E8FBF2CC1450A00C4ECEB /* ContentView.swift in Sources */,
 				047E8FBD2CC1450A00C4ECEB /* PDFPractisApp.swift in Sources */,
+				046D31EA2CC3727B00467A88 /* ContextViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +402,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		046D32172CC4E1C900467A88 /* PDFKitModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PDFKitModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 047E8FB12CC1450A00C4ECEB /* Project object */;
 }
